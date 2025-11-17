@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alberto & [Tu Pareja] — Nuestra Boda</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Alberto & [Tu Pareja]</h1>
+      <p class="date">14 · Septiembre · 2025</p>
+      <a href="#rsvp" class="cta">Confirmar asistencia</a>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <a href="#historia">Nuestra historia</a>
+    <a href="#detalles">Detalles</a>
+    <a href="#galeria">Galería</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="historia" class="section">
+    <h2>Nuestra historia</h2>
+    <p>Nos conocimos en [rellena aquí cómo os conocisteis]. Hemos vivido momentos increíbles y queremos celebrarlo contigo.</p>
+  </section>
+
+  <section id="detalles" class="section alt">
+    <h2>Detalles del evento</h2>
+    <p><strong>Ceremonia:</strong> [Lugar de la ceremonia] — <em>hora</em></p>
+    <p><strong>Recepción:</strong> [Lugar de la recepción] — <em>hora</em></p>
+    <p><strong>Código de vestimenta:</strong> [elegante / formal / casual chic]</p>
+
+    <div class="map-wrap">
+      <!-- Sustituye el src del iframe por tu embed de Google Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/hero.jpg" alt="Foto 1">
+      <img src="assets/img/couple.jpg" alt="Foto 2">
+      <img src="assets/img/venue.jpg" alt="Foto 3">
+    </div>
+  </section>
+
+  <section id="rsvp" class="section alt">
+    <h2>Confirma tu asistencia</h2>
+    <form id="rsvp-form" class="rsvp-form">
+      <label for="nombre">Nombre completo</label>
+      <input id="nombre" name="nombre" type="text" required>
+
+      <label for="acompanantes">Número de acompañantes</label>
+      <input id="acompanantes" name="acompanantes" type="number" min="0" value="0">
+
+      <label for="alergias">Alergias o comentarios</label>
+      <textarea id="alergias" name="alergias" rows="3"></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+      <p id="mensaje" class="mensaje" aria-live="polite"></p>
+    </form>
+    <p class="note">Los datos se guardarán en nuestra hoja de Google Sheets.</p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Si tienes cualquier duda escribenos a: <a href="mailto:tu-email@example.com">tu-email@example.com</a> o pulsa aquí para enviar un <a href="https://wa.me/34600000000" target="_blank" rel="noopener">WhatsApp</a>.</p>
+  </section>
+
+  <footer class="footer">
+    <p>© Alberto & [Tu Pareja] — 2025</p>
+  </footer>
+
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
