@@ -64,6 +64,15 @@ a{color:inherit}
   font-family:inherit;
   font-size:1rem;
 }
+.attendance {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.attendance label {
+  font-size: 1rem;
+  cursor: pointer;
+}
 .btn{background:var(--dark); color:#fff; padding:12px; border:none; cursor:pointer; border-radius:6px}
 .mensaje{color:green; font-weight:600; min-height:1.2em}
 
