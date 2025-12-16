@@ -2,7 +2,7 @@
 (function(){
   const fechaBoda = new Date("2026-10-03T00:00:00").getTime();
   const contadorEl = document.getElementById('contador');
-  const enterBtn = document.getElementById('enterBtn');
+  //const enterBtn = document.getElementById('enterBtn');
 
   function actualizar(){
     const ahora = Date.now();
@@ -19,7 +19,7 @@
     contadorEl.textContent = `${dias} días · ${horas} h · ${minutos} min · ${segundos} s`;
   }
 
-  enterBtn.addEventListener('click', ()=> location.href = 'main.html');
+  //enterBtn.addEventListener('click', ()=> location.href = 'main.html');
 
   actualizar();
   setInterval(actualizar, 1000);
