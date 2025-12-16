@@ -5,21 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save the Date</title>
 
-  <!-- CSS externo -->
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/countdown.css">
 </head>
 
 <body>
-  <div class="monogram">L&nbsp;&amp;&nbsp;A</div>
 
-  <div class="container" id="intro">
-    <h1>SAVE THE DATE</h1>
-    <h2>3 · Octubre · 2026</h2>
-    <div class="divider"></div>
-    <div id="contador">Cargando…</div>
-  </div>
+  <section class="hero">
+    <div class="content">
+      <h1 class="title">
+        SAVE <span>the</span> DATE
+      </h1>
 
-  <!-- JS externo -->
+      <div class="names">Laura & Alberto</div>
+
+      <div class="date">
+        03 · 10 · 2026
+      </div>
+
+      <div id="contador" class="countdown">
+        <div><span id="d">0</span>Días</div>
+        <div><span id="h">0</span>Horas</div>
+        <div><span id="m">0</span>Min</div>
+        <div><span id="s">0</span>Seg</div>
+      </div>
+
+      <button id="enterBtn" class="main-button" aria-label="Entrar a la web">Entrar</button>
+    </div>
+  </section>
+
+  <!-- JS -->
   <script src="assets/js/countdown.js"></script>
 </body>
 </html>
