@@ -13,9 +13,6 @@ body{
   color:var(--dark);
   background:var(--bg);
   -webkit-font-smoothing:antialiased;
-  background-color: black;
-  margin: 0;
-  padding: 0;
 }
 a{color:inherit}
 .hero{

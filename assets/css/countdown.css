@@ -15,7 +15,7 @@ body {
     url("../img/ring.jpg");
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
 
   display: flex;
   justify-content: center;
