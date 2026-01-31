@@ -11,7 +11,8 @@ body {
   height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80");
+    /*url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80");*/
+    url("../img/ring.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -67,3 +68,19 @@ body {
   color: black;
 }
 
+.calendar-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: 1px solid rgba(255,255,255,.7);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: all .3s ease;
+  display: inline-block;
+}
+
+.calendar-btn:hover {
+  background: white;
+  color: black;
+}
