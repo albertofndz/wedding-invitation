@@ -68,6 +68,7 @@ body {
   padding: 10px 20px;
   margin: 0;
   letter-spacing: 2px;
+  font-size: 2rem;
 }
 
 .countdown {
@@ -95,4 +96,67 @@ body {
 .main-button:hover {
   background: white;
   color: black;
+}
+
+/* Calendario */
+.calendar-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.calendar-button {
+  padding: 12px 30px;
+  border: 1px solid rgba(255,255,255,0.7);
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calendar-button:hover {
+  background: white;
+  color: black;
+}
+
+.calendar-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 4px;
+  min-width: 200px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+.calendar-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.calendar-option {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.calendar-option:last-child {
+  border-bottom: none;
+}
+
+.calendar-option:hover {
+  background: rgba(255,255,255,0.1);
 }
