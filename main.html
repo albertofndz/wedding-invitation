@@ -4,9 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Laura & Alberto — Nuestra Boda</title>
+  
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <!-- Hero Section -->
+  <!-- Para cambiar la foto: editar en assets/css/styles.css la línea que dice background-image en .hero -->
   <header class="hero">
     <div class="hero-inner">
       <h1>Laura & Alberto</h1>
@@ -15,80 +22,114 @@
     </div>
   </header>
 
+  <!-- Navegación -->
   <nav class="nav">
     <a href="#historia">Nuestra historia</a>
     <a href="#detalles">Detalles</a>
-    <a href="#galeria">Galería</a>
+    <!-- <a href="#galeria">Galería</a> -->
     <a href="#rsvp">RSVP</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
+  <!-- Nuestra Historia -->
   <section id="historia" class="section">
     <h2>Nuestra historia</h2>
-    <p>Nos conocimos en [rellena aquí cómo os conocisteis]. Hemos vivido momentos increíbles y queremos celebrarlo contigo.</p>
+    <p>
+      Nos conocimos en [rellena aquí cómo os conocisteis]. 
+      Desde entonces, hemos vivido momentos increíbles juntos 
+      y queremos celebrar nuestro amor contigo en este día tan especial.
+    </p>
   </section>
 
+  <!-- Detalles del Evento -->
   <section id="detalles" class="section alt">
     <h2>Detalles del evento</h2>
-    <p><strong>Ceremonia:</strong> Ayto de León — <em>hora</em></p>
+    
+    <p><strong>Ceremonia:</strong> Antiguo Ayuntamiento de León</p>
+    <p><em>Hora por confirmar</em></p>
     <div class="map-wrap">
-      <!-- Sustituye el src del iframe por tu embed de Google Maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.020315370074!2d-5.573238855009268!3d42.59731248530833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a9a1794c86b%3A0x20ed2ecb8dfa91bc!2sAntiguo%20Ayuntamiento%20de%20Le%C3%B3n!5e0!3m2!1ses!2ses!4v1763373414930!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.020315370074!2d-5.573238855009268!3d42.59731248530833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a9a1794c86b%3A0x20ed2ecb8dfa91bc!2sAntiguo%20Ayuntamiento%20de%20Le%C3%B3n!5e0!3m2!1ses!2ses!4v1763373414930!5m2!1ses!2ses" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
     </div>
 
-    <p><strong>Recepción:</strong> Finca La Realeza — <em>hora</em></p>
-    <div class="map-wrap"></div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.2754070466103!2d-5.620156023362056!3d42.655518871166926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a49fa8e2ea5%3A0xf16389d070d18ba5!2sFinca%20la%20Realeza!5e0!3m2!1ses!2ses!4v1763373541178!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p style="margin-top: 48px;"><strong>Recepción:</strong> Finca La Realeza</p>
+    <p><em>Hora por confirmar</em></p>
+    <div class="map-wrap">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.2754070466103!2d-5.620156023362056!3d42.655518871166926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a49fa8e2ea5%3A0xf16389d070d18ba5!2sFinca%20la%20Realeza!5e0!3m2!1ses!2ses!4v1763373541178!5m2!1ses!2ses" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
     </div>
   </section>
 
+  <!-- Galería -->
   <section id="galeria" class="section">
     <h2>Galería</h2>
+    <p style="font-style: italic; color: #999;">Esta sección es opcional. Puedes:</p>
+    <p style="font-style: italic; color: #999; margin-bottom: 40px;">
+      • Añadir fotos vuestras<br>
+      • Añadir un QR a Dot Memories<br>
+      • Eliminar esta sección completamente
+    </p>
+    <!-- 
     <div class="gallery-grid">
-      <img src="assets/img/hero.jpg" alt="Foto 1">
-      <img src="assets/img/couple.jpg" alt="Foto 2">
-      <img src="assets/img/venue.jpg" alt="Foto 3">
+      <img src="TU_FOTO_1.jpg" alt="Foto 1">
+      <img src="TU_FOTO_2.jpg" alt="Foto 2">
+      <img src="TU_FOTO_3.jpg" alt="Foto 3">
     </div>
+    -->
   </section>
 
+  <!-- RSVP -->
   <section id="rsvp" class="section alt">
     <h2>Confirma tu asistencia</h2>
+    <p>Por favor, confírmanos tu asistencia antes del 1 de septiembre de 2026</p>
+    
     <form id="rsvp-form" class="rsvp-form">
       <label for="nombre">Nombre completo</label>
-      <input id="nombre" name="nombre" type="text" required>
+      <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
 
       <label for="acompanantes">Número de acompañantes</label>
-      <input id="acompanantes" name="acompanantes" type="number" min="0" value="0">
+      <input id="acompanantes" name="acompanantes" type="number" min="0" value="0" placeholder="0">
 
       <label for="alergias">Alergias o comentarios</label>
-      <textarea id="alergias" name="alergias" rows="3"></textarea>
+      <textarea id="alergias" name="alergias" rows="4" placeholder="Déjanos saber si tienes alguna alergia alimentaria o comentario especial"></textarea>
 
       <label>¿Vas a asistir?</label>
       <div class="attendance">
         <label>
-          <input type="radio" name="asistira" value="Sí" required> Sí
+          <input type="radio" name="asistira" value="Sí" required> Sí, asistiré
         </label>
         <label>
-          <input type="radio" name="asistira" value="No"> No
+          <input type="radio" name="asistira" value="No"> No podré asistir
         </label>
       </div>
 
-      <button type="submit" class="btn">Enviar</button>
+      <button type="submit" class="btn">Enviar confirmación</button>
       <p id="mensaje" class="mensaje" aria-live="polite"></p>
     </form>
-    <p class="note">Los datos se guardarán en nuestra hoja de Google Sheets.</p>
+    
+    <p class="note">Los datos se guardarán de forma segura en nuestra hoja de Google Sheets</p>
   </section>
 
+  <!-- Contacto -->
   <section id="contacto" class="section">
     <h2>Contacto</h2>
-    <p>Si tienes cualquier duda escribenos a: <a href="mailto:albertofndz94@gmail.com">albertofndz94@gmail.com</a>.</p>
+    <p>
+      Si tienes cualquier duda o consulta, no dudes en escribirnos a: 
+      <a href="/cdn-cgi/l/email-protection#b0d3dfdec4d1d3c4dff0dcd1c5c2d1c9d1dcd2d5c2c4df9ed3dfdd"><span class="__cf_email__" data-cfemail="6a0905041e0b091e052a060b1f180b130b06080f181e0544090507">[email&#160;protected]</span></a>
+    </p>
   </section>
 
-  <footer class="footer">
-    <p>© Laura & Alberto — 2025</p>
-  </footer>
-
-  <script src="assets/js/form.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <!-- Footer -->
+  <footer class="foot
