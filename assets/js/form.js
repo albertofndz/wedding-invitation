@@ -1,16 +1,19 @@
 // form.js - Envío del formulario a Google Apps Script
-const ENDPOINT = "https://script.google.com/macros/s/AKfycbwMBRD1DxqwszdSSH5q6U7d9QI6tTACc420ULbuSYdXF-8ZmYqGPrQnHebDuMylZSua/exec";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbyLZlzdAXw4G1XIvYd_ct8XFT-A-_zKnB3hd3YSCB7bN8g_nrTie9EX14gEXeGD-sj6/exec";
 
 document.getElementById('rsvp-form').addEventListener('submit', async function(e){
   e.preventDefault();
   const btn = this.querySelector('button[type="submit"]');
   btn.disabled = true;
+  const asistira = this.querySelector('input[name="asistira"]:checked');
+  const bus = this.querySelector('input[name="bus"]:checked');
+
   const payload = {
     nombre: this.nombre.value,
     acompanantes: this.acompanantes.value,
     alergias: this.alergias.value,
-    confirmado: this.querySelector('input[name="asistira"]:checked').value,
-    bus: this.querySelector('input[name="bus"]:checked').value
+    confirmado: asistira ? asistira.value : "",
+    bus: bus ? bus.value : ""
   };
 
   try {
@@ -21,7 +24,7 @@ document.getElementById('rsvp-form').addEventListener('submit', async function(e
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(payload)
     });
-    document.getElementById('mensaje').textContent = '¡Gracias por confirmar! ❤️';
+    document.getElementById('mensaje').textContent ="¡Gracias por confirmar! Nos vemos en la boda 💍";
     this.reset();
   } catch(err){
     console.error(err);
