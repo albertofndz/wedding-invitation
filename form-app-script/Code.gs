@@ -17,7 +17,8 @@ function doPost(e) {
       data.nombre || '',
       data.acompanantes || '',
       data.alergias || '',
-      data.confirmado || ''
+      data.confirmado || '',
+      data.bus || ''
     ]);
     return ContentService
       .createTextOutput(JSON.stringify({result: 'success'}))

@@ -9,7 +9,8 @@ document.getElementById('rsvp-form').addEventListener('submit', async function(e
     nombre: this.nombre.value,
     acompanantes: this.acompanantes.value,
     alergias: this.alergias.value,
-    confirmado: this.querySelector('input[name="asistira"]:checked').value
+    confirmado: this.querySelector('input[name="asistira"]:checked').value,
+    bus: this.querySelector('input[name="bus"]:checked').value
   };
 
   try {
