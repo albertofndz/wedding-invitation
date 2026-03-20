@@ -49,8 +49,6 @@ a {
 /* ===== FRASE ROMÁNTICA ===== */
 .quote-section {
   padding: 80px 20px 40px 20px;
-  /*        ↑    ↑    ↑     ↑
-         arriba der abajo izq  */
 }
 
 .quote-container {
@@ -81,7 +79,6 @@ a {
   /* Foto de pareja placeholder - REEMPLAZAR con vuestra foto */
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    /*url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80');*/
     url('../img/couple.jpg');
   background-size: cover;
   background-position: center;
@@ -104,7 +101,6 @@ a {
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  transform: translateY(60px); /* 👈 NUEVO */
 }
 
 .hero-inner h1 {
@@ -484,26 +480,25 @@ a {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
+    min-height: 75vh; /* Un poco más alto */
     background-attachment: scroll;
-  }
-
-  .hero-inner {
-    transform: translateY(80px); /* 👈 más bajado en móvil */
+    padding: 80px 20px; /* Más padding vertical */
   }
   
   .hero-inner h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem; /* Un poco más pequeño */
+    margin-bottom: 1rem; /* Espacio después de nombres */
   }
   
   .hero .date {
-    font-size: 1rem;
+    font-size: 0.95rem;
     letter-spacing: 3px;
+    margin-bottom: 35px; /* Más espacio antes del botón */
   }
   
   .cta {
-    padding: 12px 28px;
-    font-size: 0.8rem;
+    padding: 13px 30px;
+    font-size: 0.85rem;
   }
   
   .quote-section .quote-text {
