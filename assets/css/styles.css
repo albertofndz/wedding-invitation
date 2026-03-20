@@ -136,7 +136,7 @@ a {
   transition: all 0.3s ease;
   border: 1.5px solid rgba(255,255,255,0.9);
   box-shadow: none; /* Sin sombra */
-  margin-top: 40px; /* Más separación = más abajo */
+  margin-top: 60px; /* MÁS ABAJO - en la zona oscura */
 }
 
 .cta:hover {
@@ -483,7 +483,7 @@ a {
     height: auto;
     background-attachment: scroll;
     background-position: center 30%; /* Ajustar posición de foto en móvil */
-    padding: 60px 20px 70px 20px; /* Padding controlado */
+    padding: 60px 20px 90px 20px; /* Más padding inferior para espacio del botón */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -509,7 +509,7 @@ a {
   .cta {
     padding: 9px 20px;
     font-size: 0.7rem;
-    margin-top: 35px;
+    margin-top: 50px; /* MÁS ABAJO en móvil también */
   }
   
   .quote-section .quote-text {
