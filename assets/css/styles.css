@@ -480,20 +480,28 @@ a {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero {
-    min-height: 75vh; /* Un poco más alto */
+    min-height: 100vh; /* Altura completa en móvil */
     background-attachment: scroll;
-    padding: 80px 20px; /* Más padding vertical */
+    padding: 0; /* Sin padding, usaremos flexbox */
+    display: flex;
+    align-items: flex-end; /* Empuja contenido hacia abajo */
+    padding-bottom: 120px; /* Espacio desde el fondo */
+  }
+  
+  .hero-inner {
+    width: 100%;
+    padding: 0 20px;
   }
   
   .hero-inner h1 {
-    font-size: 3.2rem; /* Un poco más pequeño */
-    margin-bottom: 1rem; /* Espacio después de nombres */
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
   }
   
   .hero .date {
     font-size: 0.95rem;
     letter-spacing: 3px;
-    margin-bottom: 35px; /* Más espacio antes del botón */
+    margin-bottom: 35px;
   }
   
   .cta {
