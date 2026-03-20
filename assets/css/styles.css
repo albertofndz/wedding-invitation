@@ -487,10 +487,13 @@ a {
     min-height: 70vh;
     background-attachment: scroll;
   }
+
+  .hero-inner {
+    transform: translateY(80px); /* 👈 más bajado en móvil */
+  }
   
   .hero-inner h1 {
     font-size: 3.5rem;
-    transform: translateY(80px); /* 👈 más bajado en móvil */
   }
   
   .hero .date {
