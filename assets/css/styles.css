@@ -480,32 +480,35 @@ a {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh; /* Altura completa en móvil */
+    min-height: auto; /* No forzar altura completa */
+    height: auto;
     background-attachment: scroll;
-    padding: 0; /* Sin padding, usaremos flexbox */
+    background-position: center 30%; /* Ajustar posición de foto en móvil */
+    padding: 60px 20px 70px 20px; /* Padding controlado */
     display: flex;
-    align-items: flex-end; /* Empuja contenido hacia abajo */
-    padding-bottom: 120px; /* Espacio desde el fondo */
+    align-items: center;
+    justify-content: center;
   }
   
   .hero-inner {
     width: 100%;
     padding: 0 20px;
+    max-width: 100%;
   }
   
   .hero-inner h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
   
   .hero .date {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     letter-spacing: 3px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   
   .cta {
-    padding: 13px 30px;
+    padding: 12px 28px;
     font-size: 0.85rem;
   }
   
