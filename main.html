@@ -81,20 +81,16 @@
   <!-- Galería -->
   <section id="galeria" class="section">
     <h2>Galería</h2>
-    <p style="font-style: italic; color: #999;">Esta sección es opcional. Puedes:</p>
-    <p style="font-style: italic; color: #999; margin-bottom: 40px;">
-      • Añadir fotos vuestras<br>
-      • Añadir un QR a Dot Memories<br>
-      • Eliminar esta sección completamente
-    </p>
-    <!-- 
-    <div class="gallery-grid">
-      <img src="TU_FOTO_1.jpg" alt="Foto 1">
-      <img src="TU_FOTO_2.jpg" alt="Foto 2">
-      <img src="TU_FOTO_3.jpg" alt="Foto 3">
+    <p>Escanea el código o haz clic para ver nuestra galería de fotos</p>
+    
+    <div class="qr-container">
+      <!-- Enlace clickable al QR - REEMPLAZA LA URL -->
+      <a href="https://photos.app.goo.gl/YQzgfsTHDSxp8TWc9" target="_blank" rel="noopener noreferrer" class="qr-link">
+        <img src="assets/img/adobe-express-qr-code.png" alt="QR Album google fotos" class="qr-image">
+      </a>
+      <p class="qr-text">Haz clic en el código o escanéalo con tu móvil</p>
     </div>
   </section>
-  -->
 
   <!-- RSVP -->
   <section id="rsvp" class="section alt">
@@ -132,7 +128,9 @@
         <label>
           <input type="radio" name="bus" value="Coche personal"> Coche personal
         </label>
+        
       </div>
+      <p class="field-note">El autobús solo estará disponible si hay más de 20 personas interesadas.</p>
 
       <button type="submit" class="btn">Enviar confirmación</button>
       <p id="mensaje" class="mensaje" aria-live="polite"></p>
