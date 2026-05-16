@@ -14,7 +14,7 @@ document.getElementById('rsvp-form').addEventListener('submit', async function (
 
   // Obtener valores seguros
   const asistira = form.querySelector('input[name="asistira"]:checked');
-  const bus = form.querySelector('input[name="bus"]:checked');
+  //const bus = form.querySelector('input[name="bus"]:checked');
 
   const nombre = form.nombre.value.trim();
   const acompanantes = form.acompanantes.value;
@@ -26,7 +26,7 @@ document.getElementById('rsvp-form').addEventListener('submit', async function (
   formData.append("acompanantes", acompanantes);
   formData.append("alergias", alergias);
   formData.append("confirmado", asistira ? asistira.value : "");
-  formData.append("bus", bus ? bus.value : "");
+  //formData.append("bus", bus ? bus.value : "");
 
   try {
     await fetch(ENDPOINT, {
